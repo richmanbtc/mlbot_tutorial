@@ -1,4 +1,5 @@
-mlbotのチュートリアル
+mlbotのチュートリアル。
+機械学習で仮想通貨の自動売買をするチュートリアルです。
 
 ## Jupyterの起動
 
@@ -16,4 +17,4 @@ Jupyter内でwork/tutorial.ipynbを開く
 
 ## チュートリアルの詳しい解説
 
-https://qiita.com/richmanbtc/items/05916384bf9d2b1e2f35
+[機械学習で仮想通貨取引をするチュートリアル。python](https://qiita.com/richmanbtc/items/05916384bf9d2b1e2f35)
