@@ -17,6 +17,6 @@ RUN pip install \
   ccxt==1.53.20 \
   lightgbm==3.2.1 \
   TA-Lib==0.4.21 \
-  "git+https://github.com/richmanbtc/crypto_data_fetcher.git@v0.0.9#egg=crypto_data_fetcher"
+  "git+https://github.com/richmanbtc/crypto_data_fetcher.git@v0.0.12#egg=crypto_data_fetcher"
 
 USER jovyan
