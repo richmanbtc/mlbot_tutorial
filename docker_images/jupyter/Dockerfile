@@ -26,5 +26,6 @@ RUN pip install \
 # matplotlibで日本語を使えるようにする
 RUN sed -i '/font\.family/d' /opt/conda/lib/python3.9/site-packages/matplotlib/mpl-data/matplotlibrc
 RUN echo "font.family: IPAexGothic" >> /opt/conda/lib/python3.9/site-packages/matplotlib/mpl-data/matplotlibrc
+RUN rm -rf /home/jovyan/.cache
 
 USER jovyan
