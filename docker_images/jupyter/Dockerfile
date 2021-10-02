@@ -4,6 +4,10 @@ USER root
 
 # install required libraries
 
+RUN apt-get update \
+  && apt-get install -y \
+    fonts-ipaexfont
+
 RUN cd /tmp \
   && wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz \
   && tar -xvf ta-lib-0.4.0-src.tar.gz \
@@ -18,5 +22,9 @@ RUN pip install \
   lightgbm==3.2.1 \
   TA-Lib==0.4.21 \
   "git+https://github.com/richmanbtc/crypto_data_fetcher.git@v0.0.12#egg=crypto_data_fetcher"
+
+# matplotlibで日本語を使えるようにする
+RUN sed -i '/font\.family/d' /opt/conda/lib/python3.9/site-packages/matplotlib/mpl-data/matplotlibrc
+RUN echo "font.family: IPAexGothic" >> /opt/conda/lib/python3.9/site-packages/matplotlib/mpl-data/matplotlibrc
 
 USER jovyan
