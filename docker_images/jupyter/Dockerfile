@@ -17,7 +17,7 @@ RUN cd /tmp \
   && make install \
   && rm -rf /tmp/*
 
-RUN pip install \
+RUN pip install --no-cache-dir \
   ccxt==1.53.20 \
   lightgbm==3.2.1 \
   TA-Lib==0.4.21 \
