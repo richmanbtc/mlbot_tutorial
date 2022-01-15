@@ -1,9 +1,16 @@
 mlbotのチュートリアル。
 機械学習で仮想通貨の自動売買をするチュートリアルです。
 
+## git clone
+
+```bash
+git clone https://github.com/richmanbtc/mlbot_tutorial.git
+```
+
 ## Jupyterの起動
 
 ```bash
+cd mlbot_tutorial
 docker-compose up -d
 ```
 
